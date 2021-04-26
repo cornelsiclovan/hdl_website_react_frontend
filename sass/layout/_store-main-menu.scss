@@ -1,0 +1,98 @@
+.main-menu {
+    height: 7rem; 
+    background-color: #000;    
+    background-position: top;
+    position: relative;
+
+    &__nav {
+        padding: 0rem;   
+        list-style-type: none; 
+    }
+
+    &__list {
+        list-style-type: none;
+          
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 2rem; 
+        height: 100%;
+        line-height: 1.9;    
+         
+        &:hover,
+        &:active{
+            background-color: $color-primary-dark; 
+            background-size: 100%;
+        } 
+    }  
+
+    &__link { 
+        font-size: 1.6rem;   
+        display: block;
+        padding: 0rem; 
+        text-transform: uppercase; 
+        color: $color-white;
+        text-decoration: none; 
+      
+    }
+
+    &__select {
+        position: relative;
+        width: 200px;
+        select {  
+            display: none;
+        }
+    }
+     
+    &__selected {
+        display: none;
+      
+    
+    }
+
+    @include respond(phone) {
+        width: 100%;
+        background-color: #fff;    
+        &__nav {
+            display: none;
+        }
+
+        &__select {
+            position: relative;
+            width: 20rem; 
+            select {
+                display: none;
+            }
+        }
+     
+        &__selected {
+            display: block; 
+            height: 7rem; 
+            width: 20rem;     
+            background-color: dodgerblue;
+            padding: 2rem;  
+            color: $color-white; 
+            font-size: 1.5rem;    
+            text-transform: uppercase;    
+        
+            &:after {
+                position: relative;
+                content: "";
+                top:1.2rem;      
+                right: -2rem;    
+                width: 0px;
+                height: 0px;
+                border: 6px solid transparent;
+                border-color: #fff transparent transparent transparent;  
+            }
+        }
+    }
+
+
+    .select-menus {
+        display: flex;
+    }
+}  
+    
+   

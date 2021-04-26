@@ -23,10 +23,27 @@
 
         @include respond(phone) {
             top:3rem;  
-            right:3rem; 
+            right:3rem;   
         }
-    }
 
+        &--store {
+            height: 5rem;
+            width: 5rem;
+            top:4rem;  
+            right: 5rem;
+
+            @include respond(tab-port) {
+                top:1rem;  
+                right:2rem; 
+            }
+    
+            @include respond(phone) {
+                top:1rem;  
+                right:2rem;   
+            }
+        }
+    } 
+  
     &__background {
         height: 6rem;
         width: 6rem;
@@ -49,6 +66,25 @@
             top:3.5rem;  
             right:3.5rem;
         }
+
+        &--store {
+            height: 5rem;  
+            width: 5rem;
+            top: 4rem;
+            right: 5rem;
+            background-image: red;
+
+            @include respond(tab-port) {
+                top:1rem;  
+                right:2rem;
+            }
+    
+            @include respond(phone) {
+                top:1rem;   
+                right:2rem;
+            }
+    
+        }  
     }
 
     &__nav {
@@ -61,6 +97,7 @@
         opacity: 0;
         width: 0;  
         transition: all .8s;
+        visibility: hidden;
     }
 
     &__list {
@@ -109,7 +146,8 @@
 
     &__checkbox:checked ~ &__nav {
         opacity: 1;
-        width: 100%;   
+        width: 100%;  
+        visibility: visible; 
     }
 
     // ICON
@@ -117,6 +155,10 @@
     &__icon {
         position: relative;
         margin-top: 3.5rem;
+
+        &--store {
+            margin-top: 2.5rem;
+        }
 
         &,
         &::before,

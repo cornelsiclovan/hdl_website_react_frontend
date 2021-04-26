@@ -1,0 +1,92 @@
+.side-menu {
+    height: 100%; 
+    width: 25rem;
+    background-color: $color-grey-light-2;      
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__nav {
+        padding: 0rem;   
+        list-style-type: none;
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        &:hover,
+        &:active{
+            background-color: $color-primary-dark; 
+            background-size: 100%;
+        } 
+        padding: .5rem; 
+    }  
+
+    &__link { 
+        font-size: 1.3rem;         
+        display: inline-block;
+        padding: 1rem; 
+        width: 100%;
+        margin: 0;  
+  
+        color: $color-grey-dark-3;  
+        text-decoration: none; 
+
+        &:hover,
+        &:active{
+            color: $color-white; 
+        }
+    }
+
+    &__select {
+        position: relative;
+        width: 200px; 
+        select {
+            display: none;
+        }
+    }
+    
+    &__selected {
+        display: none;
+    }
+
+    @include respond(phone) {
+        width: 20rem;
+        &__nav {
+            display: none;
+        }
+
+        &__select {
+            position: relative;
+            width: 0px;     
+            select {
+                display: none;
+            }
+        }
+     
+        &__selected {  
+            display: block; 
+            height: 7rem; 
+            width: 20rem;          
+            background-color: $color-grey-light-2;   
+            padding: 2rem;  
+            color: $color-grey-dark-3; 
+            font-size: 1.5rem;    
+           
+
+            &:after {
+                position: relative;
+                content: "";
+                top:1.2rem;      
+                right: -2rem;      
+                width: 0px;
+                height: 0px;
+                border: 6px solid transparent;
+                border-color: $color-grey-dark-3 transparent transparent transparent;  
+            }
+        }
+    }
+
+}
