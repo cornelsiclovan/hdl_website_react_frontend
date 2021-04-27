@@ -1,0 +1,42 @@
+.product-pagination {
+    padding: 10rem;  
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-end;    
+
+    &__item {
+        list-style-type: none;
+        
+        font-size: 1.7rem; 
+        color: #000;  
+    }
+
+    &__link {
+        text-decoration: none;
+        padding: 2rem; 
+
+        &:hover {
+            background-color: $color-grey-dark-2;         
+            color: $color-white;   
+        }
+
+        &--selected {
+            background-color: $color-primary-dark;    
+            color: $color-white;
+        }
+    }
+
+    @include respond(tab-port) {
+        justify-content: center;  
+        padding: 3rem;  
+        &__link { 
+            padding:2rem 1.5rem;    
+        }     
+    }
+
+    @include respond(phone) {
+        &__link { 
+            padding:1rem .5rem;     
+        } 
+    }
+}

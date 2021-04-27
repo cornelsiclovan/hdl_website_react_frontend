@@ -7,6 +7,8 @@
 @import "base/typography";
 @import "base/utilities";  
 
+// HOMPAGE COMPONENTS
+
 @import "components/button";
 @import "components/card";
 @import "components/composition";
@@ -15,19 +17,33 @@
 @import "components/bg-video";
 @import "components/form";
 
+
+// STORE COMPONENTS
+
+@import "components/card-item-store";
+@import "components/product-pagination";
+
+
+// HOMEPAGE LAYOUT
+
 @import "layout/header";
 @import "layout/grid";
 @import "layout/footer";
 @import "layout/navigation";
 
-//store
+
+// STORE LAYOUT
+
 @import "layout/header_store"; 
 @import "layout/store-main-menu";
 @import "layout/store-side-menu";
 @import "layout/order-menu";
 
-@import "pages/home";
 
+// PAGES
+
+@import "pages/home";
+@import "pages/products";
 
    
 

@@ -51,6 +51,12 @@
     
     }
 
+    @include respond(tab-port) {
+        &__item { 
+            padding:2rem 1.3rem;   
+        }
+    }
+
     @include respond(phone) {
         width: 100%;
         background-color: #fff;    
@@ -60,7 +66,7 @@
 
         &__select {
             position: relative;
-            width: 20rem; 
+            width: 18rem;  
             select {
                 display: none;
             }
@@ -69,7 +75,7 @@
         &__selected {
             display: block; 
             height: 7rem; 
-            width: 20rem;     
+            width: 18rem;      
             background-color: dodgerblue;
             padding: 2rem;  
             color: $color-white; 
@@ -80,7 +86,7 @@
                 position: relative;
                 content: "";
                 top:1.2rem;      
-                right: -2rem;    
+                right: 0rem;    
                 width: 0px;
                 height: 0px;
                 border: 6px solid transparent;
