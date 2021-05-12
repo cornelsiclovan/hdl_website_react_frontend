@@ -8,6 +8,7 @@
 
         <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/icon-shop.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
         
         <title>Hdl partner portal | the fascinating world of automation</title>
@@ -18,407 +19,179 @@
                 <img src="img/hdl-logo.png" alt="hdl logo" class="header-store__logo--store"/>
             </div>
 
-            <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-            
-            <label for="navi-toggle" class="navigation__button navigation__button--store">
-                <span class="navigation__icon navigation__icon--store">&nbsp;</span>
-            </label>
-            
-            <div class="navigation__background navigation__background--store">&nbsp;</div>
-            
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item navigation__item--store">
-                        <a href="#" class="navigation__link">Home</a>
-                    </li>
-                    <li class="navigation__item navigation__item--store">
-                        <a href="#" class="navigation__link">Products</a>
-                    </li>
-                    <li class="navigation__item navigation__item--store">
-                        <a href="#" class="navigation__link">Login</a>
-                    </li>
-                    <li class="navigation__item navigation__item--store">
-                        <a href="#" class="navigation__link">Signup</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            <div class="shopping-cart"> 
+                <label class="shopping-cart__button">
+                    <i class="shopping-cart__icon icon-ecommerce-cart-content"></i>
+                </label>   
 
-        </header>
+            </div>
+
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                
+                <label for="navi-toggle" class="navigation__button navigation__button--store">
+                    <span class="navigation__icon navigation__icon--store">&nbsp;</span>
+                </label>
+                
+                <div class="navigation__background navigation__background--store">&nbsp;</div>
+                
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item navigation__item--store">
+                            <a href="#" class="navigation__link">Home</a>
+                        </li>
+                        <li class="navigation__item navigation__item--store">
+                            <a href="#" class="navigation__link">Products</a>
+                        </li>
+                        <li class="navigation__item navigation__item--store">
+                            <a href="#" class="navigation__link">Login</a>
+                        </li>
+                        <li class="navigation__item navigation__item--store">
+                            <a href="#" class="navigation__link">Signup</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> 
 
         <main>
-            <div class="main-menu">
-                <nav class="main-menu__nav">
-                    <ul class="main-menu__list">
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">Bus pro</a>
+            <div class="shopping-main">
+                <nav class="shopping-main__nav">
+                    <ul class="shopping-main__list">
+                        <li class="shopping-main__item"> 
+                            <a href="#" class="shopping-main__link--selected">
+                                <span class="shopping-main__link--selected-number">1</span> 
+                                Shopping Cart
+                            </a>
                         </li>
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">knx</a>
+                        <li class="shopping-main__item">
+                            <a href="#" class="shopping-main__link">
+                                <span class="shopping-main__link-number">2</span>   
+                                Billing & Delivery
+                            </a>
                         </li>
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">Buspro wireless</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">Others</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">Sockets</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">Wall brackets</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">IQRC</a>
+                        <li class="shopping-main__item">
+                            <a href="#" class="shopping-main__link">
+                                <span class="shopping-main__link-number">3</span> 
+                                Review and Payment
+                            </a>
                         </li>
                     </ul>
                 </nav>
+            </div>  
+
+            <div class="continue-shopping"> 
                 
-                <div class="select-menus">
-                    <div class="main-menu__select">
-                        <select>
-                            <option value="0">Select option</option>
-                            <option value="1">Bus pro</option>
-                            <option value="2">knx</option>
-                            <option value="3">Buspro wireless</option>
-                            <option value="4">Others</option>
-                            <option value="5">Sockets</option>
-                            <option value="6">Wall brakets</option>
-                            <option value="7">IQRC</option>
-                            
-                        </select> 
+                    <a class="btn-text" style="padding-top:2rem"> &larr; &nbsp; continue shopping &nbsp;  </a>
+                
+            </div>
+            <div class="continue-shopping"> 
 
-                        <div class="main-menu__selected">
-                            Buspro wireless 
-                        </div>
-                    </div>
-
-                    <div class="side-menu__select">
-                  
-
-                        <select>
-                            <option value="0">Relay actuators</option>
-                            <option value="1">Dimmers</option>
-                            <option value="2">Dimmers led</option>
-                            <option value="3">DALI Actuators</option>
-                            <option value="4">DMX Actuators</option>
-                            <option value="5">User interfaces</option>
-                            <option value="6">Sensors</option>
-                            <option value="7">Shading systems</option>
-                            <option value="4">Hotel system</option>
-                            <option value="5">HVAC</option>
-                            <option value="6">Dry Contact inputs</option>
-                            <option value="7">IR Control</option>
-                            <option value="4">Audio Systems</option>
-                            <option value="5">Security System</option>
-                            <option value="6">Communication Gateways</option>
-                            <option value="7">System modules</option>
-                            <option value="5">>Power metering</option>
-                            <option value="6">Cables & accessories</option>
-                            <option value="7">Powe Supply</option>
-                            
-                        </select> 
-
-                        <div class="side-menu__selected">
-                            Communication Gateways 
-                        </div>
-                    </div>  
-                </div>
+                    <h1 style="color:black">Your shopping cart</h1>
             </div>
 
-            <div class="order-menu">
-                <nav class="order-menu__nav">
-                    <ul class="order-menu__list">
-                        <li class="order-menu__item">
-                            <a href="#" class="order-menu__link" ><b>Order by:</b></a>
+            <div class="section-cart">
+                <div class="section-cart__left">
+                    <ul class="section-cart__left--list">
+                        <li class="section-cart__left--item">
+                           <div class="col-1-of-4">
+                               test
+                           </div>
+                           <div class="col-1-of-4">
+                                 test
+                            </div>
+                            <div class="col-2-of-4">
+                                test
+                           </div>
                         </li>
-                        <li class="order-menu__item">
-                            <a href="#" class="order-menu__link">TOP</a>
-                        </li>
-                        <li class="order-menu__item">
-                            <a href="#" class="order-menu__link">Price Asc.</a>
-                        </li>
-                        <li class="order-menu__item">
-                            <a href="#" class="order-menu__link">Price Desc.</a>
-                        </li>
-                        <li class="order-menu__item">
-                            <a href="#" class="order-menu__link">Name</a>
-                        </li>
+                        <li class="section-cart__left--item">
+                            <div class="col-1-of-4">
+                                test
+                            </div>
+                            <div class="col-1-of-4">
+                                  test
+                             </div>
+                             <div class="col-2-of-4">
+                                 test
+                            </div>
+                         </li>
+                         <li class="section-cart__left--item">
+                            <div class="col-1-of-4">
+                                test
+                            </div>
+                            <div class="col-1-of-4">
+                                  test
+                             </div>
+                             <div class="col-2-of-4">
+                                 test
+                            </div>
+                         </li>
+                         <li class="section-cart__left--item">
+                            <div class="col-1-of-4">
+                                test
+                            </div>
+                            <div class="col-1-of-4">
+                                  test
+                             </div>
+                             <div class="col-2-of-4">
+                                 test
+                            </div>
+                         </li>
+                         <li class="section-cart__left--item">
+                            <div class="col-1-of-4">
+                                test
+                            </div>
+                            <div class="col-1-of-4">
+                                  test
+                             </div>
+                             <div class="col-2-of-4">
+                                 test
+                            </div>
+                         </li>
+                         <li class="section-cart__left--item">
+                            <div class="col-1-of-4">
+                                test
+                            </div>
+                            <div class="col-1-of-4">
+                                  test
+                             </div>
+                             <div class="col-2-of-4">
+                                 test
+                            </div>
+                         </li>
                     </ul>
-                </nav>
-            </div>
-    
-
-            <div class="side-menu">
-                <br/> 
-                <br/>
-                <span class="side-menu__select--title">
-                    Buspro
-                </span>
-                <br/>
-                <nav class="side-menu__nav">
-                    <ul class="side-menu__list">
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Relay actuators</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Dimmers</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Dimmers led</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">DALI Actuators</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">DMX Actuators</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">User interfaces</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Sensors</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Shading systems</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Hotel system</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">HVAC</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Dry Contact inputs</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">IR Control</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Audio Systems</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Security System</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Communication Gateways</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">System modules</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Power metering</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Cables & accessories</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Powe Supply</a>
-                        </li>
-                    </ul>
-                </nav>
-                <br/>
-                <br/>
-                <span class="side-menu__select--title">
-                    Status
-                </span>
-                <div class="side-menu__checkbox--container">
-                    <label class="side-menu__checkbox">
-                        Bestsellser
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="side-menu__checkbox">
-                        New
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="side-menu__checkbox">
-                        On sale 
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
                 </div>
-                <br/>
-                <span class="side-menu__select--title">
-                    Availability
-                </span>
-                <label class="side-menu__checkbox">
-                    Only on stock
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <br/>
+                <div class="section-cart__right">
+                    <div class="section-cart__right--card">
+                        <ul class="section-cart__right--list">
+                            <li class="section-cart__right--item">
+                                <span class="section-cart__text">
+                                    Subtotal (excl. VAT) 
+                                </span>
+                                <span class="section-cart__price">
+                                    10.80 Eur 
+                                </span>
+                            </li>
+                            <li class="section-cart__right--item">
+                                <span class="section-cart__text">
+                                    <b>Total with tax</b>
+                                </span>
+                                <span class="section-cart__price">
+                                    <b>10.80 Eur</b>
+                                </span>
+                            </li>
+                        </ul>
+                        <span class="section-cart__right--comment">Review your shopping cart and checkout</span>
+                    </div>
+                    <center>
+                        <button style="margin-top: 1rem" class="btn btn--mov">
+                            Checkout   
+                        </button>
+                    </center>
+                </div>
             </div>
 
-            <div class="section-products"> 
-                <div class="card-item">
-                    <h4 class="card-item__heading"> 
-                        <span class="card-item__heading-span">HDL-MD0206432</span>
-                        
-                    </h4> 
-                    <img  class="card-item__picture" src="img/HDL-MD0206_432-05.jpg">  
-                    
-                   
-                    <div class="card-item__details">
-                        <ul>
-                            <li>2CH 6A TRIAC Dimming Acuator</li>
-                            <li>15 pcs in stock</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h4 class="card-item__heading"> 
-                        <span class="card-item__heading-span">HDL-MC64-DALI_431-05</span>
-                        
-                    </h4>
-                    <img  class="card-item__picture" src="img/HDL-MC64-DALI_431-05.jpg">  
-        
-                     
-                    <div class="card-item__details">
-                        <ul>
-                            <li>2CH 6A TRIAC Dimming Acuator</li>
-                            <li>15 pcs in stock</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-                <div class="card-item">
-                    <h4 class="card-item__heading"> 
-                        <span class="card-item__heading-span">HDL_MSOUT-4W</span>
-                        
-                    </h4>
-                    <img  class="card-item__picture" src="img/Foto_HDL_MSOUT-4W_.jpg">  
-        
-                     
-                    <div class="card-item__details">
-                        <ul>
-                            <li>2CH 6A TRIAC Dimming Acuator</li>
-                            <li>15 pcs in stock</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h4 class="card-item__heading"> 
-                        <span class="card-item__heading-span">HDL-MDLED0605_432-08</span>
-                        
-                    </h4>
-                    <img  class="card-item__picture" src="img/HDL-MDLED0605_432-08.jpg">  
-        
-                     
-                    <div class="card-item__details">
-                        <ul>
-                            <li>2CH 6A TRIAC Dimming Acuator</li>
-                            <li>15 pcs in stock</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h4 class="card-item__heading"> 
-                        <span class="card-item__heading-span">HDL-MC64-DALI_431-05</span>
-                        
-                    </h4>
-                    <img  class="card-item__picture" src="img/HDL-MC64-DALI_431-05.jpg">  
-        
-                     
-                    <div class="card-item__details">
-                        <ul>
-                            <li>2CH 6A TRIAC Dimming Acuator</li>
-                            <li>15 pcs in stock</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h4 class="card-item__heading"> 
-                        <span class="card-item__heading-span">HDL-MP2B_48-01BDR</span>
-                        
-                    </h4>
-                    <img  class="card-item__picture" src="img/HDL-MP2B_48-01BDR.jpg">  
-        
-                     
-                    <div class="card-item__details">
-                        <ul>
-                            <li>2CH 6A TRIAC Dimming Acuator</li>
-                            <li>15 pcs in stock</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h4 class="card-item__heading"> 
-                        <span class="card-item__heading-span">HDL-MTS10B.2WI</span>
-                        
-                    </h4>
-                    <img  class="card-item__picture" src="img/_P3A1193.jpg">  
-        
-                     
-                    <div class="card-item__details">
-                        <ul>
-                            <li>2CH 6A TRIAC Dimming Acuator</li>
-                            <li>15 pcs in stock</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h4 class="card-item__heading"> 
-                        <span class="card-item__heading-span">HDL-MTIRW-03</span>
-                        
-                    </h4>
-                    <img  class="card-item__picture" src="img/HDL-MTIRW-03.jpg">  
-        
-                      
-                    <div class="card-item__details">
-                        <ul>
-                            <li>2CH 6A TRIAC Dimming Acuator</li>
-                            <li>15 pcs in stock</li>
-                        </ul>
-                    </div>
-                </div> 
-            </div>
- 
-            <div class="section-pagination">
-                    <ul class="product-pagination"> 
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link" href="#">|<</a>  
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link product-pagination__link--selected"  href="#">1</a>    
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">2</a>   
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">3</a>  
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">4</a>   
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">5</a>    
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">6</a>    
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">7</a>  
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">8</a>   
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">9</a>    
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">10</a>    
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">...</a>    
-                        </li>
-                        <li class="product-pagination__item">
-                            <a class="product-pagination__link"  href="#">>|</a>    
-                        </li>
-                    </ul>
-            </div>
         </main>
         <footer class="footer">
             <div class="footer__logo-box">

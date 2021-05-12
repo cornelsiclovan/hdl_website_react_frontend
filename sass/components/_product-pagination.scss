@@ -14,9 +14,10 @@
     &__link {
         text-decoration: none;
         padding: 2rem; 
-
+        color: #000;  
+ 
         &:hover {
-            background-color: $color-grey-dark-2;         
+            background-color: #ccc;           
             color: $color-white;   
         }
 

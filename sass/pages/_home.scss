@@ -95,3 +95,55 @@
         } 
     }
 }      
+
+.section-cart {
+    font-size: 1.7rem;
+      
+    &__left{
+        width: 66.6666666%;
+        float: left;
+        padding: 2rem;
+          
+        &--item{ 
+             display: flex;  
+             justify-content: space-between;
+             &:not(:first-child) {
+                border-top: 1px solid rgba($color-grey-light-2, .95);   
+             }
+        }
+
+        @include respond(phone) {
+            width: 100%;   
+          } 
+
+    }
+
+    &__right{
+        background-color: $color-grey-light-2;  
+        color: black;  
+        width:33.333333333%;
+        float: left; 
+        padding: 2rem;
+
+        &--item{  
+           
+           
+            &:not(:first-child) {
+                border-top: 1px solid rgba($color-grey-dark-3, .15);   
+            }
+            display: flex; 
+            justify-content: space-between;
+       }
+
+       &--comment{
+           font-size: 1.3rem;
+       } 
+
+       @include respond(phone) {
+        width: 100%;   
+      }  
+
+    }
+
+    
+}
