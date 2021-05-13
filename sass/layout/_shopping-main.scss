@@ -17,13 +17,18 @@
     &__item {
         display: inline-block;
         height: 100%;
-        line-height: 1.9;    
+        line-height: 1.9;  
          
         &:hover,
         &:active{
             background-color: $color-primary-dark; 
             background-size: 100%;
         } 
+
+        @include respond(phone) {
+           display: block;
+        }   
+
     }    
 
     &__link { 
@@ -67,7 +72,6 @@
     }
 
     @include respond(phone) {
-      height: 15rem;  
-    } 
-  
+      height: 21rem;   
+    }   
 }  

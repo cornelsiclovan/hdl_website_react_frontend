@@ -987,6 +987,9 @@ as
     .shopping-main__item:hover, .shopping-main__item:active {
       background-color: #81398a;
       background-size: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .shopping-main__item {
+        display: block; } }
   .shopping-main__link {
     font-size: 2rem;
     display: block;
@@ -1019,7 +1022,7 @@ as
         margin-right: 1.5rem; }
   @media only screen and (max-width: 37.5em) {
     .shopping-main {
-      height: 15rem; } }
+      height: 21rem; } }
 
 .header-store {
   height: 7rem;
@@ -1299,6 +1302,9 @@ as
     .shopping-main__item:hover, .shopping-main__item:active {
       background-color: #81398a;
       background-size: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .shopping-main__item {
+        display: block; } }
   .shopping-main__link {
     font-size: 2rem;
     display: block;
@@ -1331,7 +1337,7 @@ as
         margin-right: 1.5rem; }
   @media only screen and (max-width: 37.5em) {
     .shopping-main {
-      height: 15rem; } }
+      height: 21rem; } }
 
 .section-about {
   background-color: #f7f7f7;
@@ -1409,6 +1415,27 @@ as
       justify-content: space-between; }
       .section-cart__left--item:not(:first-child) {
         border-top: 1px solid rgba(238, 238, 238, 0.95); }
+      .section-cart__left--item-pull-left {
+        display: flex;
+        justify-content: flex-start; }
+        .section-cart__left--item-pull-left > img {
+          width: 15%;
+          height: auto;
+          object-fit: scale-down; }
+      .section-cart__left--item-col {
+        margin-top: -10px;
+        color: black;
+        font-size: 2rem;
+        padding: 1.3rem; }
+        .section-cart__left--item-col > span {
+          color: #81398a;
+          font-size: 1.5rem; }
+        .section-cart__left--item-col-qty {
+          font-size: 1.5rem;
+          width: 4.5rem;
+          margin: 1rem;
+          padding: 1rem 0rem 1rem 1.3rem;
+          border: 1px solid rgba(153, 153, 153, 0.99); }
     @media only screen and (max-width: 37.5em) {
       .section-cart__left {
         width: 100%; } }

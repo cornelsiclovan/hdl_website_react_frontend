@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/icon-shop.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+        
+        <title>Hdl partner portal | the fascinating world of automation</title>
+    </head>
+    <body>
+        <header class="header-store">
+            <div class="header-store__logo-box--store">
+                <img src="img/hdl-logo.png" alt="hdl logo" class="header-store__logo--store"/>
+            </div>
+
+            <div class="shopping-cart"> 
+                <label class="shopping-cart__button">
+                    <i class="shopping-cart__icon icon-ecommerce-cart-content"></i>
+                </label>   
+
+            </div>
+
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                
+                <label for="navi-toggle" class="navigation__button navigation__button--store">
+                    <span class="navigation__icon navigation__icon--store">&nbsp;</span>
+                </label>
+                
+                <div class="navigation__background navigation__background--store">&nbsp;</div>
+                
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item navigation__item--store">
+                            <a href="#" class="navigation__link">Home</a>
+                        </li>
+                        <li class="navigation__item navigation__item--store">
+                            <a href="#" class="navigation__link">Products</a>
+                        </li>
+                        <li class="navigation__item navigation__item--store">
+                            <a href="#" class="navigation__link">Login</a>
+                        </li>
+                        <li class="navigation__item navigation__item--store">
+                            <a href="#" class="navigation__link">Signup</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> 
+
+        <main>
+            <div class="shopping-main">
+                <nav class="shopping-main__nav">
+                    <ul class="shopping-main__list">
+                        <li class="shopping-main__item"> 
+                            <a href="#" class="shopping-main__link">
+                                <span class="shopping-main__link-number">1</span> 
+                                Shopping Cart
+                            </a>
+                        </li>
+                        <li class="shopping-main__item">
+                            <a href="#" class="shopping-main__link--selected">
+                                <span class="shopping-main__link--selected-number">2</span>   
+                                Billing & Delivery
+                            </a>
+                        </li>
+                        <li class="shopping-main__item">
+                            <a href="#" class="shopping-main__link">
+                                <span class="shopping-main__link-number">3</span> 
+                                Review and Payment
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>  
+
+            <div class="continue-shopping"> 
+                
+                    <a class="btn-text" style="padding-top:2rem"> &larr; &nbsp; continue shopping &nbsp;  </a>
+                
+            </div>
+            <div class="continue-shopping"> 
+
+                    <h1 style="color:black">Billing details</h1>
+            </div>
+
+            <div class="section-cart">
+                <div class="section-cart__left">
+                    <form action="#" class="form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                            <label for="name" class="form__label">Full Name</label>
+                        </div>
+                        <div class="form_group">
+                            <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                            <label for="email" class="form__label">Email</label>
+                        </div>   
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="Phone" id="phone" required>
+                            <label for="text" class="form__label">Phone</label>
+                        </div>   
+                        <div class="continue-shopping" style="margin-left: -15px;">  
+
+                            <h1 style="color:black">Company details</h1>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="Company" id="company" required>
+                            <label for="company" class="form__label">Company</label>
+                        </div>   
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="Organization ID" id="org_id" required>
+                            <label for="org_id" class="form__label">Organization ID</label>
+                        </div>   
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="Tax Registration ID" id="tax_reg_id" required>
+                            <label for="tax_reg_id" class="form__label">Tax Registration ID</label>
+                        </div>
+                        <div class="continue-shopping" style="margin-left: -15px;"> 
+
+                            <h1 style="color:black">Billing address</h1>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="Address" id="billing_address" required>
+                            <label for="billing_address" class="form__label">Address</label>
+                        </div>   
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="Address line" id="billing_address_line" required>
+                            <label for="billing_address_line" class="form__label">Address line</label>
+                        </div>   
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="Address line 2" id="billing_address_line2" required>
+                            <label for="billing_address_line2" class="form__label">Address line 2</label>
+                        </div>    
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="City" id="city" required>
+                            <label for="city" class="form__label">City</label>
+                        </div>   
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="Postal code" id="postal_code" required>
+                            <label for="postal_code" class="form__label">Postal code</label>
+                        </div> 
+                        <div class="form_group">
+                            <input type="text" class="form__input" placeholder="Country" id="country" required>
+                            <label for="country" class="form__label">Country</label>
+                        </div>                   
+                    </form>
+                </div>
+                <div class="section-cart__right">
+                    <div class="section-cart__right--card">
+                       Fill in your billing details and delivery preferences and proceed to review your order.
+                    </div>
+                    <center>
+                        <button style="margin-top: 1rem" class="btn btn--mov">
+                            Review Order 
+                        </button>
+                    </center>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="img/hdl-logo-blue.png" alt="Full logo" class="footer__logo">
+            </div> 
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Company</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Contact us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Carrers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Privacy policy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        <a href="#" class="footer__link">Hdl automation</a> All rights reserved. Copyright &copy; Home Automation System
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -109,6 +109,40 @@
              justify-content: space-between;
              &:not(:first-child) {
                 border-top: 1px solid rgba($color-grey-light-2, .95);   
+             } 
+
+             &-pull-left{
+                 display: flex;  
+                 justify-content: flex-start;
+                 
+                 
+                 & > img {
+                    width: 15% ; 
+                    height: auto ;
+                    object-fit: scale-down;       
+                 }
+             }
+
+             &-col {
+                 margin-top: -10px;  
+                 color: black;
+                 font-size: 2rem; 
+                 padding: 1.3rem; 
+                     
+    
+
+                 & > span {
+                     color: $color-primary-dark;
+                     font-size: 1.5rem;  
+                 }
+
+                 &-qty{
+                     font-size: 1.5rem; 
+                     width: 4.5rem;            
+                     margin:1rem;            
+                     padding: 1rem 0rem 1rem 1.3rem;      
+                     border: 1px solid rgba($color-grey-dark-2, .99);
+                 }
              }
         }
 
